@@ -125,9 +125,8 @@
 <body>
     <!-- Header -->
     <header>
-        </li>
         <h1>
-            <a href="gpt.html">
+            <a href="Hamza.html">
                 <img src="images/logo.png" alt="Small Image" width="100" height="50" 
                     style="margin-bottom: -15px"/>
             </a>
@@ -139,14 +138,6 @@
 
         <nav>
             <div>
-                <ul>
-                    <li><a href="#">Products</a></li>
-                    <a href="gpt.html">
-                        <img src="images/logo-2.webp" alt="Clickable Image"  width="20" height="20" />
-                    </a>
-                </ul>
-            </div>
-            <div>
                 <datalist id="pro">
                     <option value="High-End Laptop">
                     <option value="Latest Smartphone">
@@ -156,6 +147,83 @@
                 </datalist>
             </div>
         </nav>
+        <nav>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" style="margin-top: 10px; display: inline-block;">Products</a>
+                            <ul class="dropdown">
+                                <li style="margin-bottom: 10px;"></li><a href="#">P2342423422342roduct1</a></li>
+                                <li style="margin-bottom: 10px;"></li><a href="#">Product2</a></li>
+                                <li style="margin-bottom: 10px;"></li><a href="#">Product3</a></li>
+                            </ul>
+                        </li>
+                        <div>
+                            <ul>
+                                <a href="Hamza.html">
+                                    <img src="images/cart-logo-4.png" alt="Clickable Image"  width="80" height="30"  />
+                                    
+                                </a>
+                            </ul>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        
+                    </ul>
+                </nav>
+                
+
+                <!--CSS-->
+
+                <style>
+                    nav ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    nav ul li {
+                        position: relative;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+
+                    nav ul li a {
+                        text-decoration: none;
+                        color: #fff;
+                        /* Change to your desired color */
+                    }
+
+                    nav .dropdown {
+                        display: none;
+                        position: absolute;
+                        background-color: #1a1a2e;
+                        /* Match your header color */
+                        list-style: none;
+                        padding: 10px;
+                        margin: 0;
+                    }
+
+                    nav ul li:hover .dropdown {
+                        display: block;
+                        /* Show dropdown on hover */
+                    }
+
+                    nav .dropdown li {
+                        display: block;
+                        /* Display dropdown items vertically */
+                    }
+
+                    nav .dropdown li a {
+                        padding: 5px;
+                        /* Add padding to dropdown items */
+                        color: #fff;
+                        /* Change to your desired color */
+                    }
+                </style>
+
+            </div>
     </header>
 
     <style>
