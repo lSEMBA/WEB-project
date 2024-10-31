@@ -122,18 +122,77 @@
     <!-- Header -->
     <header>
         <h1>ElectroMart <input size="20px" list="pro" name="pro" placeholder="Search..."
-                style="vertical-align: middle; margin-left: 1px; margin-bottom: 4px;" />
+                style="vertical-align: middle; margin-left: 1px; margin-bottom: 4px; " />
 
         </h1>
 
         <nav>
             <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Product1 </a></li>
+                                <li><a href="#">Product2 </a></li>
+                                <li><a href="#">Product3 </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+
+                <!--CSS-->
+
+                <style>
+                    nav ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    nav ul li {
+                        position: relative;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+
+                    nav ul li a {
+                        text-decoration: none;
+                        color: #fff;
+                        /* Change to your desired color */
+                    }
+
+                    nav .dropdown {
+                        display: none;
+                        position: absolute;
+                        background-color: #1a1a2e;
+                        /* Match your header color */
+                        list-style: none;
+                        padding: 10px;
+                        margin: 0;
+                    }
+
+                    nav ul li:hover .dropdown {
+                        display: block;
+                        /* Show dropdown on hover */
+                    }
+
+                    nav .dropdown li {
+                        display: block;
+                        /* Display dropdown items vertically */
+                    }
+
+                    nav .dropdown li a {
+                        padding: 5px;
+                        /* Add padding to dropdown items */
+                        color: #fff;
+                        /* Change to your desired color */
+                    }
+                </style>
+
             </div>
             <div>
                 <datalist id="pro">
@@ -195,8 +254,11 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 ElectroMart. All rights reserved.</p>
+        <p style="display: inline;">&copy; 2024 ElectroMart. All rights reserved.</p>
+        <span style="margin-left: 10px;">Contact</span>
+        <span style="margin-left: 10px;">About</span>
     </footer>
+
 
     <style>
         footer {
